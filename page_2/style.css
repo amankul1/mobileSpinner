@@ -8,9 +8,6 @@
    font-family: Roboto;
    font-size: 16px;
 }
-body{
-   margin: auto;
-}
 
 .deviceFrame{
    width: 411px;
@@ -19,6 +16,8 @@ body{
    flex-wrap: wrap;
    justify-content: center;
    align-items: flex-start;
+   box-shadow: 0 0 7px #666;
+   margin: auto;
 }
 
 .deviseHeader{

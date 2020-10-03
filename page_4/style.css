@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
+*{
+   margin: 0;
+   padding: 0;
+   left: 0;
+   top: 0;
+   box-sizing: border-box;
+   font-family: Roboto;
+   font-size: 16px;
+}
+
+.deviceFrame{
+   width: 420px;
+   height: 100vh;
+   display:inline-block;
+   box-shadow: 0 0 7px #666;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.deviseHeader{
+   width: 100%;
+   height: 80px;
+   background-color:#3E6BC4;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items:center;
+}
+.deviseHeader .notification{
+   position: relative;
+   width: 23px;
+   height: 23px;
+}
+.deviseHeader .notification .dot1{
+   position: absolute;
+   margin-left: 50%;
+}
+.deviseHeader .bell{
+   position: relative;
+   width: 19px;
+   height: 24px;
+}
+.deviseHeader .bell .dot2{
+   position: absolute;
+   margin-left: 50%;
+}
+
+.deviceFrame .notificationTittle{
+   width: 100%;   
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+   padding-top: 2vh;
+}
+.deviceFrame .notificationTittle p{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 1000;
+   font-size: 16px;
+   line-height: 24px;
+
+}
+
+.deviceFrame .notificationBlocks{
+   width: 100%;
+   padding: 3vh;
+   display: flex;
+   flex-wrap: wrap;
+   align-items:center;
+   border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+
+.deviceFrame .notificationBlocks .textBlock{
+   width: 100%;
+   margin-bottom: 1vh;
+}
+
+
+@media screen and (max-width: 420px){
+   .deviceFrame{
+      width: 100vw;
+      height: 100vh;
+      display:inline-block;
+      overflow-y: scroll;
+   overflow-x: hidden;
+   }
+}
